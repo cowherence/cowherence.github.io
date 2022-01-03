@@ -7,7 +7,7 @@ body {
     color: white;
 
     /* https://www.w3schools.com/howto/howto_css_hero_image.asp */
-    background-image: url("test.jpg");
+    //background-image: url("test.jpg");
 
     height: 100%;
 
@@ -16,7 +16,7 @@ body {
 }
 
 #main {
-    width: 55rem;
+    width: 70rem;
     margin: auto;
 }
 
@@ -30,19 +30,25 @@ body {
     letter-spacing: 6px;
 }
 
-#cowherence-video {
-    padding-top: 20px;
-    opacity: 0.8;
+.ytplayer-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
 }
-
-.responsive {
+.ytplayer-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto;
-}
+    height: 100%;
 
+    padding-top: 20px;
+}
 /**********************/
 /* Social Media Icons */
 #social-media-div {
+    padding-top: 25px;
     text-align: center;
 }
 
